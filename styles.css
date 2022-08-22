@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.game-tic {     /*containr*/
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 90px 155px 155px 155px 5px 55px;
+    grid-template-columns: 260px 430px 422px 120px 123px;
+    grid-template-areas: 
+      "living-room living-room living-room  living-room   living-room "
+      "bedroom  kitchen kitchen estufa estufa"
+      "bedroom  kitchen kitchen estufa estufa"
+      "bedroom  kitchen kitchen estufa estufa"
+      "bedroom  TV TV TV TV"
+      "closet closet closet closet closet ";
+    }
+  
+  .game-tic > div {
+    background-color: #eedff0;
+  }
+  
+  .board {
+    text-align: center;
+  }
+  
+
+  h1{
+    color: rgb(6, 2, 59);
+    font-size: 39px;
+    text-align: center;
+    place-content: center;
+    padding-top: 13px;
+  }
+
+  #living-room {
+    grid-area: living-room;
+  }
+  
+  
+  #kitchen  {
+    grid-area: kitchen;
+    background-color: blueviolet;
+}
+
+#kitchen div {
+    padding-top: 0px;
+}
+
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 10px auto;
+  background-color: #11213a;
+  color: #04c0b2;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  background-color: black;
+  font-family: "Permanent Marker", cursive;
+  width: 180px;
+  height: 112px;
+  box-shadow: 2px 2px 2px 2px #ecd7ba;
+  border: 2px solid #ecd7ba;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+.game--status {
+  font-size: 40px;
+  color: #eb4015;
+  margin: 10px auto;
+}
+
+.game--restart {
+  background-color: #e182ee;
+  border-radius: 90px;
+  width: 200px;
+  height: 50px;
+  font-size: 23px;
+  color: #012466;
+  box-shadow: 2px 2px 2px 2px #51058f;
+  border: 2px solid #d86c23;
+}
+
+button div {
+    background-color: aquamarine;
+    width: 480PX;
+    height: 150PX;
+}
+
+button {
+    background-color: rgb(186, 223, 210);
+}
+
+  #estufa {
+    grid-area: estufa;
+    text-align: center;
+    font-size: 25px;
+    color: #012466;
+  }
+  
+  #bedroom {
+    grid-area: bedroom;
+    font-size: 25px;
+    color: #012466;
+  }
+  
+  #TV {
+    grid-area: TV;
+    background-color: #012466;
+  }
+ 
+  
+  #closet {
+    grid-area: closet;
+    background-color: rgb(43, 35, 35);
+    text-align: center;
+    padding-top: 13px;
+    place-items: center;
+    color: aliceblue;
+  }
+  
+  
+  
+  
+  
